@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="gepeto">
 <head>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" />
@@ -11,7 +11,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
   <script src="script.js"></script>
 </head>
-<body>
+<body ng-controller="mainController">
 
 	<header>
 		<nav class="navbar navbar-default">
@@ -31,6 +31,7 @@
 
 	<!-- MAIN CONTENT AND INJECTED VIEWS -->
 	<div id="main">
+    <div ng-view></div>
 
 		<!-- angular templating -->
 		<!-- this is where content will be injected -->
